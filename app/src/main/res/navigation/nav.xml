@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav.xml"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.ejercicio_video.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/go_suma"
+            app:destination="@id/suma" />
+        <action
+            android:id="@+id/go_resta"
+            app:destination="@id/resta" />
+    </fragment>
+    <fragment
+        android:id="@+id/suma"
+        android:name="com.example.ejercicio_video.Suma"
+        android:label="fragment_suma"
+        tools:layout="@layout/fragment_suma" />
+    <fragment
+        android:id="@+id/resta"
+        android:name="com.example.ejercicio_video.resta"
+        android:label="fragment_resta"
+        tools:layout="@layout/fragment_resta" />
+</navigation>

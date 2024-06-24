@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resta">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:id="@+id/LlSuma">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/tvResta"
+         android:text="La Resta"
+         android:textAlignment="center"
+         android:textSize="30sp"
+         android:layout_margin="35dp"
+         />
+
+     <com.google.android.material.textfield.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/tfNum1"
+         android:hint="Ingrese el primer numero"
+         android:layout_margin="30dp"
+         >
+
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             />
+     </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/tfNum2"
+             android:hint="Ingrese el segundo numero"
+             android:layout_margin="30dp"
+             >
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/btnResta"
+       android:text="La Resta"
+       android:layout_marginVertical="10dp"
+       android:layout_marginHorizontal="50dp"
+       />
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/Resultado"
+         android:text="0"
+         android:paddingHorizontal="50dp"
+         android:textAlignment="center"
+         android:textSize="30sp"
+         />
+
+ </LinearLayout>
+
+</FrameLayout>
